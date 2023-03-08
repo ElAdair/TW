@@ -1,7 +1,14 @@
 //Sergio Adair Ramirez Valdez
+var url = windiw.location.href;
+var swLocation = '/tw/sw.js';
 
 if(navigator.serviceWorker) {
-    navigator.serviceWorker.register('/sw.js');
+
+    if(url.includes('localhost')){
+        swLocation = '/sw.js';
+    }
+
+    navigator.serviceWorker.register(swLocation);
 }
 
 
