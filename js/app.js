@@ -1,5 +1,5 @@
 //Sergio Adair Ramirez Valdez
-var url = windiw.location.href;
+var url = window.location.href;
 var swLocation = '/tw/sw.js';
 
 if(navigator.serviceWorker) {
